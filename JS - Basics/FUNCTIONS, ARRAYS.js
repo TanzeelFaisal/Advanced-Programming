@@ -160,6 +160,10 @@ console.log(`${movies}`)
 */
 
 // movies.splice(0, 1)                      // delete from 0 (inclusive) till 1 (exclusive)
+console.log(movies)
+movies.splice(1, 0, "Movie")                      // delete from 0 (inclusive) till 1 (exclusive)
+console.log(movies)
+
 /*
 movies.splice(3, 7)
 console.log(`${movies}`)
@@ -172,7 +176,7 @@ function func(x) {
 movies.forEach(func)                        // takes a function as parameter
 */
 
-let qq = [1, "yy", 3, {name: "xyz", youtube: "hi"}, "yet"]
-qq.forEach((x, y) => {
-    console.log(`${x} has index ${y}`)
-})
+// let qq = [1, "yy", 3, {name: "xyz", youtube: "hi"}, "yet"]
+// qq.forEach((x, y) => {
+//     console.log(`${x} has index ${y}`)
+// })
