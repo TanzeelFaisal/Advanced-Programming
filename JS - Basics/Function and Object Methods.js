@@ -4,7 +4,7 @@
 const arr=[1, 2, 3]
 
 // Returns same type of array
-const squared=arr.map(
+const squared=arr.map (
     function(item) {
         return item**2
     }
