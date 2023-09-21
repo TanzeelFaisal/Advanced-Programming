@@ -1,0 +1,24 @@
+class character{
+    constructor(n,h) {
+        this.name = n,
+        this.health=h
+    }
+    describe = () => {
+        console.log(`${this.name} has ${this.health} points`)
+    }
+}
+
+// This keyword is inaccessible in Objects inside arrow functions
+// Though, this keyword is accessible in Classes inside arrow functions
+// This is because arrow functions uses the scope of the parent lexically above it
+// , it would be able to get the variable from global scope
+// Need to research this for better concept ...
+
+let Alex = new character("Alex", 30)
+Alex.describe()
+
+console.log(typeof(Alex))
+
+// No proper concept of Class usage in Js
+// Constructor aids in the usage of 'new' keyword
+
