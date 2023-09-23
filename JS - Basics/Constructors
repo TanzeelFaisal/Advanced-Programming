@@ -8,11 +8,12 @@ class character{
     }
 }
 
-// The 'this' keyword is inaccessible in Objects inside arrow functions
-// Though, the 'this' keyword is accessible in Classes inside arrow functions
-// This is because arrow functions uses the scope of the parent lexically above it,
-// it would be able to get the variable from global scope
-// Need to research this for better concept ...
+// Arrow functions in JavaScript do not have their own this context.
+// Instead, they capture the this value from the surrounding (lexical) scope in which they are defined.
+// When you define an arrow function as a method inside an object, it will capture the this value from the outer scope where the object is defined.
+// In most cases, this means it captures the this value from the global scope or the parent function if it's defined inside a function.
+// Inside classes, arrow functions behave differently because they capture the this value from the lexical scope in which the class method is defined.
+// This lexical scope includes the class itself, so this refers to the class instance.
 
 let Alex = new character("Alex", 30)
 Alex.describe()
