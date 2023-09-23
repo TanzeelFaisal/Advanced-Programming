@@ -42,6 +42,21 @@ const sum = arr.reduce(
 )
 */
 
+
+//  Class Task
+/*
+let animals = ['dog', 'cat', 'dog', 'cow']
+
+// reduce(accumulator, value, index, array) // Callback function for reduce
+let animalsObj = animals.reduce((obj, value) => {
+    if (obj[value]) obj[value]++
+    else obj[value] = 1
+    return obj
+}, {})
+
+console.log(animalsObj)
+*/
+
 /*
 // Returns true if true for even one value
 const arr = [1, 2, -4, 3, -6]
