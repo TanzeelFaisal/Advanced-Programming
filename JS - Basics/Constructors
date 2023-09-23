@@ -8,8 +8,8 @@ class character{
     }
 }
 
-// This keyword is inaccessible in Objects inside arrow functions
-// Though, this keyword is accessible in Classes inside arrow functions
+// The 'this' keyword is inaccessible in Objects inside arrow functions
+// Though, the 'this' keyword is accessible in Classes inside arrow functions
 // This is because arrow functions uses the scope of the parent lexically above it,
 // it would be able to get the variable from global scope
 // Need to research this for better concept ...
