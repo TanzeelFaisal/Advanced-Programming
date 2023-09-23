@@ -90,4 +90,4 @@ obj1 = obj2
 let a = [1, 2]
 let a1 = [...a, 3, 4]
 
-[a, ,b] = ["sara", "ali", "hira"]
+[a,,b] = ["sara", "ali", "hira"]

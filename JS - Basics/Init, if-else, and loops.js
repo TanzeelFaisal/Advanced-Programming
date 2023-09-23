@@ -72,3 +72,4 @@ const str = "hira"
 for (let x of str) {
     console.log(x)
 }
+*/
